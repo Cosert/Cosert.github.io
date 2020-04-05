@@ -20,20 +20,26 @@
     var CONFIG = {"hostname":"cosine22.xyz","root":"/","scheme":"Mist","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"hide","padding":20,"offset":16,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="神秘代码">
+  <meta name="description" content="偶然发现2020年的GCJ开始报名了。于是踊跃报名。报名后将GCJ的热身赛拿下42分，获得比赛资格(分数达到30才有正式比赛资格)。很可惜的是不熟悉互动题的操作，以及自然拉丁矩阵加强版少考虑了情况。　　这里给出前三题的解法。注意中国大陆网络可能无法正常访问原题目所在网站。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="wenhao">
-<meta property="og:url" content="https://cosine22.xyz/2020/03/15/wenhao/index.html">
+<meta property="og:title" content="Google Code Jam 2020 Qualification Round 总结">
+<meta property="og:url" content="https://cosine22.xyz/2020/04/05/gcj2020qf/index.html">
 <meta property="og:site_name" content="Mr.Cosine&#39;s Blog">
-<meta property="og:description" content="神秘代码">
+<meta property="og:description" content="偶然发现2020年的GCJ开始报名了。于是踊跃报名。报名后将GCJ的热身赛拿下42分，获得比赛资格(分数达到30才有正式比赛资格)。很可惜的是不熟悉互动题的操作，以及自然拉丁矩阵加强版少考虑了情况。　　这里给出前三题的解法。注意中国大陆网络可能无法正常访问原题目所在网站。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-15T02:42:15.000Z">
-<meta property="article:modified_time" content="2020-03-15T06:19:28.307Z">
+<meta property="article:published_time" content="2020-04-05T07:27:31.000Z">
+<meta property="article:modified_time" content="2020-04-05T09:16:12.941Z">
 <meta property="article:author" content="Mr.Cose">
-<meta property="article:tag" content="资源分享">
+<meta property="article:tag" content="C++">
+<meta property="article:tag" content="Google Code Jam">
+<meta property="article:tag" content="Google Code Jam 2020 Qualification Round">
+<meta property="article:tag" content="GCJ">
+<meta property="article:tag" content="GCJ2020">
+<meta property="article:tag" content="Google">
+<meta property="article:tag" content="谷歌">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://cosine22.xyz/2020/03/15/wenhao/">
+<link rel="canonical" href="https://cosine22.xyz/2020/04/05/gcj2020qf/">
 
 
 <script id="page-configurations">
@@ -45,7 +51,7 @@
   };
 </script>
 
-  <title>wenhao | Mr.Cosine's Blog</title>
+  <title>Google Code Jam 2020 Qualification Round 总结 | Mr.Cosine's Blog</title>
   
 
 
@@ -178,7 +184,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://cosine22.xyz/2020/03/15/wenhao/">
+    <link itemprop="mainEntityOfPage" href="https://cosine22.xyz/2020/04/05/gcj2020qf/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/cosine.png">
@@ -191,7 +197,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          wenhao
+          Google Code Jam 2020 Qualification Round 总结
         </h1>
 
         <div class="post-meta">
@@ -202,7 +208,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-03-15 10:42:15 / 修改时间：14:19:28" itemprop="dateCreated datePublished" datetime="2020-03-15T10:42:15+08:00">2020-03-15</time>
+              <time title="创建时间：2020-04-05 15:27:31 / 修改时间：17:16:12" itemprop="dateCreated datePublished" datetime="2020-04-05T15:27:31+08:00">2020-04-05</time>
             </span>
 
           
@@ -216,10 +222,18 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>神秘代码</p>
+        <p>　　偶然发现2020年的GCJ开始报名了。于是踊跃报名。报名后将GCJ的热身赛拿下42分，获得比赛资格(分数达到30才有正式比赛资格)。很可惜的是不熟悉互动题的操作，以及自然拉丁矩阵加强版少考虑了情况。<br>　　这里给出前三题的解法。注意中国大陆网络可能无法正常访问原题目所在网站。</p>
 <a id="more"></a>
-<p>〇: 9⑨ 8244 35  (已故)         3</p>
-<p>①:  1 5 2 2 7 5 9 4 5</p>
+
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><h3 id="Vestigium-7-pts"><a href="#Vestigium-7-pts" class="headerlink" title="Vestigium ( 7 pts )"></a>Vestigium ( 7 pts )</h3><p>　　热身赛限时20秒，限内存 1GB，莽就行了。把 i 行 i 列的元素快排然后遍历。当第 i 行/列 有重复元素时将其计数器加一。别忘记把对角线上的值记下来。<br>　　代码: <a href="https://github.com/Mr-Cose/Cosworkshop/blob/master/GCJ2020/GCJ2020_QualificationRound/a.cpp" target="_blank" rel="noopener">GitHub</a></p>
+<h3 id="Nesting-Depth-7-pts-15-pts"><a href="#Nesting-Depth-7-pts-15-pts" class="headerlink" title="Nesting Depth ( 7 pts, 15 pts )"></a>Nesting Depth ( 7 pts, 15 pts )</h3><p>　　题意很好理解，即: 数字前面的数比其小，加相差大小等量的左括号。那么记录当前值，遍历到比当前值大的数字时加左括号，反之加右括号。注意第一个数和最后一个数要特判。<br>　　代码: <a href="https://github.com/Mr-Cose/Cosworkshop/blob/master/GCJ2020/GCJ2020_QualificationRound/b.cpp" target="_blank" rel="noopener">GitHub</a></p>
+<h3 id="Parenting-Partnering-Returns-7-pts-12-pts"><a href="#Parenting-Partnering-Returns-7-pts-12-pts" class="headerlink" title="Parenting Partnering Returns ( 7 pts, 12 pts )"></a>Parenting Partnering Returns ( 7 pts, 12 pts )</h3><p>　　即两个人轮流分担差事，碰到两个人都无法顾及的时间段输出”IMPOSSIBLE”。按活动开始时间排序并遍历，记录每个人进行到的活动的结束时间。若甲的上一项活动结束时间晚于开始时间，则分担给乙。若乙的情况也如此，则无解。<br>　　排序前需先记录下活动的下标，因为输出是按下标的顺序来的！<br>　　代码: <a href="https://github.com/Mr-Cose/Cosworkshop/blob/master/GCJ2020/GCJ2020_QualificationRound/c.cpp" target="_blank" rel="noopener">GitHub</a></p>
+<h3 id="ESAb-ATAd-1-pts-9-pts-16-pts-略"><a href="#ESAb-ATAd-1-pts-9-pts-16-pts-略" class="headerlink" title="ESAb ATAd ( 1 pts, 9 pts, 16 pts ) (略)"></a>ESAb ATAd ( 1 pts, 9 pts, 16 pts ) (略)</h3><h3 id="Indicium-7-pts-25-pts-未解决"><a href="#Indicium-7-pts-25-pts-未解决" class="headerlink" title="Indicium ( 7 pts, 25 pts ) (未解决)"></a>Indicium ( 7 pts, 25 pts ) (未解决)</h3><p>　　开始以为按照 (k%n)==0 来判断即可。但实际上情况不单一QWQ！当 n 为奇数时，n(n+1)/2==k 也可以达成目的; n 为偶数时情况就更多了！例如: </p>
+<p>Input<br>4 14<br>Output<br>4 1 2 3<br>1 3 4 2<br>2 4 3 1<br>3 2 1 4</p>
+<p>　　只要满足对角线上的数加起来为 k 且同行同列没有重复元素就行，随便怎么跑。<br>　　因此想要深入了解计算机学，还是需要下功夫啊。<br>　　未完成的代码在这，欢迎迫害。<a href="https://github.com/Mr-Cose/Cosworkshop/blob/master/GCJ2020/GCJ2020_QualificationRound/e.cpp" target="_blank" rel="noopener">GitHub</a></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>　　GCJ 的 C++ 编译环境: Debian 9.8 stretch(amd64)。栈限制<code>ulimit -s 65536</code>。c++ 编译器是 6.3.0 版本的 gcc，参数是 </p>
+<pre><code class="bash">g++ Solution.cc -std=c++14 -pthread -O3 -o Solution</code></pre>
+<p>　　一开始并没仔细看规则，结果在代码中添加了 #ifndef ONLINE_JUDGE(评测机参数没定义) 读取输入文件的环节，结果超时了。<br>　　所以比赛规则还是要仔细看啊。如果看不懂就多练练英语。<br>　　很高兴能够获得GCJ比赛的入场券，那个激动啊。希望能够拿到好名次，我好想要那件T恤QwQ。。。<br>　　最后，祝光顾本博的朋友在GCJ打出好名次。冲！</p>
 
     </div>
 
@@ -235,7 +249,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://cosine22.xyz/2020/03/15/wenhao/" title="wenhao">https://cosine22.xyz/2020/03/15/wenhao/</a>
+    <a href="https://cosine22.xyz/2020/04/05/gcj2020qf/" title="Google Code Jam 2020 Qualification Round 总结">https://cosine22.xyz/2020/04/05/gcj2020qf/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -246,7 +260,13 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/" rel="tag"># 资源分享</a>
+              <a href="/tags/C/" rel="tag"># C++</a>
+              <a href="/tags/Google-Code-Jam/" rel="tag"># Google Code Jam</a>
+              <a href="/tags/Google-Code-Jam-2020-Qualification-Round/" rel="tag"># Google Code Jam 2020 Qualification Round</a>
+              <a href="/tags/GCJ/" rel="tag"># GCJ</a>
+              <a href="/tags/GCJ2020/" rel="tag"># GCJ2020</a>
+              <a href="/tags/Google/" rel="tag"># Google</a>
+              <a href="/tags/%E8%B0%B7%E6%AD%8C/" rel="tag"># 谷歌</a>
           </div>
 
         
@@ -255,13 +275,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/03/10/CF-EDU-83/" rel="prev" title="Educational Codeforces Round 83 A-C题解">
-      <i class="fa fa-chevron-left"></i> Educational Codeforces Round 83 A-C题解
+    <a href="/2020/03/15/CF-628/" rel="prev" title="Codeforces Round 628 div.2 题解">
+      <i class="fa fa-chevron-left"></i> Codeforces Round 628 div.2 题解
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/03/15/CF-628/" rel="next" title="Codeforces Round 628 div.2 题解">
-      Codeforces Round 628 div.2 题解 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -322,6 +339,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题解"><span class="nav-number">1.</span> <span class="nav-text">题解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Vestigium-7-pts"><span class="nav-number">1.1.</span> <span class="nav-text">Vestigium ( 7 pts )</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nesting-Depth-7-pts-15-pts"><span class="nav-number">1.2.</span> <span class="nav-text">Nesting Depth ( 7 pts, 15 pts )</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Parenting-Partnering-Returns-7-pts-12-pts"><span class="nav-number">1.3.</span> <span class="nav-text">Parenting Partnering Returns ( 7 pts, 12 pts )</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ESAb-ATAd-1-pts-9-pts-16-pts-略"><span class="nav-number">1.4.</span> <span class="nav-text">ESAb ATAd ( 1 pts, 9 pts, 16 pts ) (略)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Indicium-7-pts-25-pts-未解决"><span class="nav-number">1.5.</span> <span class="nav-text">Indicium ( 7 pts, 25 pts ) (未解决)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">2.</span> <span class="nav-text">总结</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -462,7 +480,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'mr-cose.github.io',
       owner       : 'Mr-Cose',
       admin       : ['Mr-Cose'],
-      id          : '4a33af543aad422770acf014bbbf5ef3',
+      id          : '1ab3d5f79f4989539f2596b54e2fc2a9',
         language: '',
       distractionFreeMode: true
     });
