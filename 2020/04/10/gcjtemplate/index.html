@@ -20,26 +20,26 @@
     var CONFIG = {"hostname":"cosine22.xyz","root":"/","scheme":"Mist","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"hide","padding":20,"offset":16,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="偶然发现2020年的GCJ开始报名了。于是踊跃报名。报名后将GCJ的热身赛拿下42分，获得比赛资格(分数达到30才有正式比赛资格)。很可惜的是不熟悉互动题的操作，以及自然拉丁矩阵加强版少考虑了情况。　　这里给出前三题的解法。注意中国大陆网络可能无法正常访问原题目所在网站。">
+  <meta name="description" content="发帖日期10号，明天就是GCJ的 1A 回合。在这里将我准备的答题模板分享出来。如果没看到也没关系，参加 1B、1C 也可以用到。祝各位比赛顺利！ 地址: GitHub">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Google Code Jam 2020 Qualification Round 总结">
-<meta property="og:url" content="https://cosine22.xyz/2020/04/05/gcj2020qf/index.html">
+<meta property="og:title" content="Google Code Jam 答题模板分享 ( C++ )">
+<meta property="og:url" content="https://cosine22.xyz/2020/04/10/gcjtemplate/index.html">
 <meta property="og:site_name" content="Mr.Cosine&#39;s Blog">
-<meta property="og:description" content="偶然发现2020年的GCJ开始报名了。于是踊跃报名。报名后将GCJ的热身赛拿下42分，获得比赛资格(分数达到30才有正式比赛资格)。很可惜的是不熟悉互动题的操作，以及自然拉丁矩阵加强版少考虑了情况。　　这里给出前三题的解法。注意中国大陆网络可能无法正常访问原题目所在网站。">
+<meta property="og:description" content="发帖日期10号，明天就是GCJ的 1A 回合。在这里将我准备的答题模板分享出来。如果没看到也没关系，参加 1B、1C 也可以用到。祝各位比赛顺利！ 地址: GitHub">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-04-05T07:27:31.000Z">
-<meta property="article:modified_time" content="2020-04-05T09:16:12.941Z">
+<meta property="article:published_time" content="2020-04-10T12:21:05.000Z">
+<meta property="article:modified_time" content="2020-04-10T12:27:57.245Z">
 <meta property="article:author" content="Mr.Cose">
 <meta property="article:tag" content="C++">
+<meta property="article:tag" content="资源分享">
 <meta property="article:tag" content="Google Code Jam">
-<meta property="article:tag" content="Google Code Jam 2020 Qualification Round">
 <meta property="article:tag" content="GCJ">
 <meta property="article:tag" content="GCJ2020">
 <meta property="article:tag" content="Google">
 <meta property="article:tag" content="谷歌">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://cosine22.xyz/2020/04/05/gcj2020qf/">
+<link rel="canonical" href="https://cosine22.xyz/2020/04/10/gcjtemplate/">
 
 
 <script id="page-configurations">
@@ -51,7 +51,7 @@
   };
 </script>
 
-  <title>Google Code Jam 2020 Qualification Round 总结 | Mr.Cosine's Blog</title>
+  <title>Google Code Jam 答题模板分享 ( C++ ) | Mr.Cosine's Blog</title>
   
 
 
@@ -184,7 +184,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://cosine22.xyz/2020/04/05/gcj2020qf/">
+    <link itemprop="mainEntityOfPage" href="https://cosine22.xyz/2020/04/10/gcjtemplate/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/cosine.png">
@@ -197,7 +197,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Google Code Jam 2020 Qualification Round 总结
+          Google Code Jam 答题模板分享 ( C++ )
         </h1>
 
         <div class="post-meta">
@@ -208,7 +208,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-04-05 15:27:31 / 修改时间：17:16:12" itemprop="dateCreated datePublished" datetime="2020-04-05T15:27:31+08:00">2020-04-05</time>
+              <time title="创建时间：2020-04-10 20:21:05 / 修改时间：20:27:57" itemprop="dateCreated datePublished" datetime="2020-04-10T20:21:05+08:00">2020-04-10</time>
             </span>
 
           
@@ -222,18 +222,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>　　偶然发现2020年的GCJ开始报名了。于是踊跃报名。报名后将GCJ的热身赛拿下42分，获得比赛资格(分数达到30才有正式比赛资格)。很可惜的是不熟悉互动题的操作，以及自然拉丁矩阵加强版少考虑了情况。<br>　　这里给出前三题的解法。注意中国大陆网络可能无法正常访问原题目所在网站。</p>
+        <p>　　发帖日期10号，明天就是GCJ的 1A 回合。在这里将我准备的答题模板分享出来。如果没看到也没关系，参加 1B、1C 也可以用到。祝各位比赛顺利！</p>
+<p>地址: <a href="https://github.com/Mr-Cose/Cosworkshop/tree/master/Answer_Template/GoogleCodeJam" target="_blank" rel="noopener">GitHub</a></p>
 <a id="more"></a>
 
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><h3 id="Vestigium-7-pts"><a href="#Vestigium-7-pts" class="headerlink" title="Vestigium ( 7 pts )"></a>Vestigium ( 7 pts )</h3><p>　　热身赛限时20秒，限内存 1GB，莽就行了。把 i 行 i 列的元素快排然后遍历。当第 i 行/列 有重复元素时将其计数器加一。别忘记把对角线上的值记下来。<br>　　代码: <a href="https://github.com/Mr-Cose/Cosworkshop/blob/master/GCJ2020/GCJ2020_QualificationRound/a.cpp" target="_blank" rel="noopener">GitHub</a></p>
-<h3 id="Nesting-Depth-7-pts-15-pts"><a href="#Nesting-Depth-7-pts-15-pts" class="headerlink" title="Nesting Depth ( 7 pts, 15 pts )"></a>Nesting Depth ( 7 pts, 15 pts )</h3><p>　　题意很好理解，即: 数字前面的数比其小，加相差大小等量的左括号。那么记录当前值，遍历到比当前值大的数字时加左括号，反之加右括号。注意第一个数和最后一个数要特判。<br>　　代码: <a href="https://github.com/Mr-Cose/Cosworkshop/blob/master/GCJ2020/GCJ2020_QualificationRound/b.cpp" target="_blank" rel="noopener">GitHub</a></p>
-<h3 id="Parenting-Partnering-Returns-7-pts-12-pts"><a href="#Parenting-Partnering-Returns-7-pts-12-pts" class="headerlink" title="Parenting Partnering Returns ( 7 pts, 12 pts )"></a>Parenting Partnering Returns ( 7 pts, 12 pts )</h3><p>　　即两个人轮流分担差事，碰到两个人都无法顾及的时间段输出”IMPOSSIBLE”。按活动开始时间排序并遍历，记录每个人进行到的活动的结束时间。若甲的上一项活动结束时间晚于开始时间，则分担给乙。若乙的情况也如此，则无解。<br>　　排序前需先记录下活动的下标，因为输出是按下标的顺序来的！<br>　　代码: <a href="https://github.com/Mr-Cose/Cosworkshop/blob/master/GCJ2020/GCJ2020_QualificationRound/c.cpp" target="_blank" rel="noopener">GitHub</a></p>
-<h3 id="ESAb-ATAd-1-pts-9-pts-16-pts-略"><a href="#ESAb-ATAd-1-pts-9-pts-16-pts-略" class="headerlink" title="ESAb ATAd ( 1 pts, 9 pts, 16 pts ) (略)"></a>ESAb ATAd ( 1 pts, 9 pts, 16 pts ) (略)</h3><h3 id="Indicium-7-pts-25-pts-未解决"><a href="#Indicium-7-pts-25-pts-未解决" class="headerlink" title="Indicium ( 7 pts, 25 pts ) (未解决)"></a>Indicium ( 7 pts, 25 pts ) (未解决)</h3><p>　　开始以为按照 (k%n)==0 来判断即可。但实际上情况不单一QWQ！当 n 为奇数时，n(n+1)/2==k 也可以达成目的; n 为偶数时情况就更多了！例如: </p>
-<p>Input<br>4 14<br>Output<br>4 1 2 3<br>1 3 4 2<br>2 4 3 1<br>3 2 1 4</p>
-<p>　　只要满足对角线上的数加起来为 k 且同行同列没有重复元素就行，随便怎么跑。<br>　　因此想要深入了解计算机学，还是需要下功夫啊。<br>　　未完成的代码在这，欢迎迫害。<a href="https://github.com/Mr-Cose/Cosworkshop/blob/master/GCJ2020/GCJ2020_QualificationRound/e.cpp" target="_blank" rel="noopener">GitHub</a></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>　　GCJ 的 C++ 编译环境: Debian 9.8 stretch(amd64)。栈限制<code>ulimit -s 65536</code>。c++ 编译器是 6.3.0 版本的 gcc，参数是 </p>
-<pre><code class="bash">g++ Solution.cc -std=c++14 -pthread -O3 -o Solution</code></pre>
-<p>　　一开始并没仔细看规则，结果在代码中添加了 #ifndef ONLINE_JUDGE(评测机参数没定义) 读取输入文件的环节，结果超时了。<br>　　所以比赛规则还是要仔细看啊。如果看不懂就多练练英语。<br>　　很高兴能够获得GCJ比赛的入场券，那个激动啊。希望能够拿到好名次，我好想要那件T恤QwQ。。。<br>　　最后，祝光顾本博的朋友在GCJ打出好名次。冲！</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> _tp&gt; <span class="keyword">inline</span> _tp <span class="title">ri</span><span class="params">(_tp &amp;_var)</span> </span>&#123; _var=<span class="number">0</span>; <span class="keyword">bool</span> _ng=<span class="number">0</span>; <span class="keyword">char</span> _rd=(<span class="keyword">char</span>)getchar(); </span><br><span class="line">    <span class="keyword">while</span>(_rd&lt;<span class="string">'0'</span> || _rd&gt;<span class="string">'9'</span>) &#123; <span class="keyword">if</span>(_rd==<span class="string">'-'</span>)&#123;_ng=<span class="number">1</span>; &#125; _rd=(<span class="keyword">char</span>)getchar(); &#125;</span><br><span class="line">    <span class="keyword">while</span>(<span class="string">'0'</span>&lt;=_rd &amp;&amp; _rd&lt;=<span class="string">'9'</span>) _var=_var*<span class="number">10</span>+(_tp)_rd<span class="number">-48</span>, _rd=(<span class="keyword">char</span>)getchar(); </span><br><span class="line">    <span class="keyword">if</span>(_ng)&#123;_var*=<span class="number">-1</span>; &#125; <span class="keyword">return</span> _var; &#125; </span><br><span class="line"><span class="function"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> _tp&gt; <span class="keyword">inline</span> <span class="keyword">bool</span> <span class="title">wo</span><span class="params">(_tp _var, <span class="keyword">int</span> _nli=<span class="number">0</span>)</span> </span>&#123; <span class="keyword">static</span> <span class="keyword">char</span> _wri[<span class="number">36</span>]; <span class="keyword">int</span> _tpi=<span class="number">0</span>; </span><br><span class="line">    <span class="keyword">if</span>(_var&lt;<span class="number">0</span>)&#123;<span class="built_in">putchar</span>(<span class="string">'-'</span>), _var*=<span class="number">-1</span>; &#125; <span class="keyword">do</span>&#123;_wri[_tpi++]=(<span class="keyword">char</span>)((_var%<span class="number">10</span>)+<span class="number">48</span>), _var/=<span class="number">10</span>; &#125;<span class="keyword">while</span>(_var); </span><br><span class="line">    <span class="keyword">while</span>(_tpi) <span class="built_in">putchar</span>(_wri[--_tpi]); </span><br><span class="line">    <span class="keyword">if</span>(_nli)&#123;_nli==<span class="number">2</span> ? <span class="built_in">putchar</span>(<span class="string">' '</span>) : <span class="built_in">putchar</span>(<span class="string">'\n'</span>); &#125; <span class="keyword">return</span> <span class="number">1</span>; &#125; </span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>; </span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ld long double</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ull unsigned long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pii pair<span class="meta-string">&lt;int, int&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pdi pair<span class="meta-string">&lt;double, int&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pid pair<span class="meta-string">&lt;int, double&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pdd pair<span class="meta-string">&lt;double, double&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pli pair<span class="meta-string">&lt;long long, int&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pil pair<span class="meta-string">&lt;int, long long&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pll pair<span class="meta-string">&lt;long long, long long&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> inf=<span class="number">2114514810</span>; </span><br><span class="line"><span class="keyword">const</span> ll mod=<span class="number">998244353</span>; </span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn=<span class="number">1000000</span>; </span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n, m; </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="comment">//int Cases= ri(Cases); </span></span><br><span class="line">    <span class="comment">//ri(n); //ri(m); </span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> Cases= ri(Cases) , tcs=<span class="number">1</span>; tcs&lt;=Cases; tcs++) &#123; </span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"Case #"</span>); wo(tcs); <span class="built_in">putchar</span>(<span class="string">':'</span>); <span class="built_in">putchar</span>(<span class="string">' '</span>); </span><br><span class="line">        init(); </span><br><span class="line">        solve(); </span><br><span class="line">    &#125; </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -249,7 +242,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://cosine22.xyz/2020/04/05/gcj2020qf/" title="Google Code Jam 2020 Qualification Round 总结">https://cosine22.xyz/2020/04/05/gcj2020qf/</a>
+    <a href="https://cosine22.xyz/2020/04/10/gcjtemplate/" title="Google Code Jam 答题模板分享 ( C++ )">https://cosine22.xyz/2020/04/10/gcjtemplate/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -261,8 +254,8 @@
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/C/" rel="tag"># C++</a>
+              <a href="/tags/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/" rel="tag"># 资源分享</a>
               <a href="/tags/Google-Code-Jam/" rel="tag"># Google Code Jam</a>
-              <a href="/tags/Google-Code-Jam-2020-Qualification-Round/" rel="tag"># Google Code Jam 2020 Qualification Round</a>
               <a href="/tags/GCJ/" rel="tag"># GCJ</a>
               <a href="/tags/GCJ2020/" rel="tag"># GCJ2020</a>
               <a href="/tags/Google/" rel="tag"># Google</a>
@@ -275,13 +268,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/03/15/CF-628/" rel="prev" title="Codeforces Round 628 div.2 题解">
-      <i class="fa fa-chevron-left"></i> Codeforces Round 628 div.2 题解
+    <a href="/2020/04/05/gcj2020qf/" rel="prev" title="Google Code Jam 2020 Qualification Round 总结">
+      <i class="fa fa-chevron-left"></i> Google Code Jam 2020 Qualification Round 总结
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/04/10/gcjtemplate/" rel="next" title="Google Code Jam 答题模板分享 ( C++ )">
-      Google Code Jam 答题模板分享 ( C++ ) <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -342,7 +332,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题解"><span class="nav-number">1.</span> <span class="nav-text">题解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Vestigium-7-pts"><span class="nav-number">1.1.</span> <span class="nav-text">Vestigium ( 7 pts )</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nesting-Depth-7-pts-15-pts"><span class="nav-number">1.2.</span> <span class="nav-text">Nesting Depth ( 7 pts, 15 pts )</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Parenting-Partnering-Returns-7-pts-12-pts"><span class="nav-number">1.3.</span> <span class="nav-text">Parenting Partnering Returns ( 7 pts, 12 pts )</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ESAb-ATAd-1-pts-9-pts-16-pts-略"><span class="nav-number">1.4.</span> <span class="nav-text">ESAb ATAd ( 1 pts, 9 pts, 16 pts ) (略)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Indicium-7-pts-25-pts-未解决"><span class="nav-number">1.5.</span> <span class="nav-text">Indicium ( 7 pts, 25 pts ) (未解决)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">2.</span> <span class="nav-text">总结</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -485,7 +474,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'mr-cose.github.io',
       owner       : 'Mr-Cose',
       admin       : ['Mr-Cose'],
-      id          : '1ab3d5f79f4989539f2596b54e2fc2a9',
+      id          : '04108ec0360a6867323d7e8cd3de4361',
         language: '',
       distractionFreeMode: true
     });
