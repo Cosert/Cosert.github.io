@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cosine22.xyz/"/>
-  <updated>2020-04-29T19:07:10.976Z</updated>
+  <updated>2020-05-08T07:37:59.286Z</updated>
   <id>https://cosine22.xyz/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Google Code Jam 2020 总结</title>
+    <link href="https://cosine22.xyz/2020/05/04/GCJ2020summary/"/>
+    <id>https://cosine22.xyz/2020/05/04/GCJ2020summary/</id>
+    <published>2020-05-04T05:37:38.000Z</published>
+    <updated>2020-05-08T07:37:59.286Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　今年的 Google Code Jam 赛季草草结束了。由于先天能力上的缺失，平时积累的不足，加上赛期准备不充分，我的赛季止步于 Round 1。我通过参加 GCJ 比赛增长见识，提高自己的代码能力，受益匪浅。</p><a id="more"></a><h2 id="赛期经历"><a href="#赛期经历" class="headerlink" title="赛期经历"></a>赛期经历</h2><p>　　四月三日得知有谷歌的比赛，便匆匆忙忙报名参加资格赛。资格赛分数足够，即将进入 Round 1。当时很欣喜，希望第一次就能够晋级。</p><p>　　之后尝试着做了几道 GCJ 往年的原题，发现题目不看题解做不出来—题目的新颖程度超出我的想象。于是决定把每道题目都”咬一遍”，待彻底束手无策时看题解。事实证明这种方法在看得懂题解的时候十分有效，凭着题解我很快解决并记住了几种想不出来的题目，并学会了新的解题方法。然而，由于顾及学业出勤和实验室的要求。练 GCJ 的时间断断续续，计划没有很好的持续下去。</p><p>　　1A 比赛遇到了字符串处理相关的题目，因为想不全情况，加之技艺不精，没有将通过率高的第一题解决。整场比赛下来只有第二题通过了两个样例。</p><p>　　1B 赛前受到了很大的心理打击。比赛当天拿不出应有的状态。</p><p>　　后来元气恢复，但是因为各种各样的事情没有多钻研一些 GCJ 原题，也没有研究一些好用的算法，相当于裸奔上街(1B期间沉迷B站，1C前一阵子还是偶尔上)。1C 的比赛依旧是爆炸的。第一题是水题，而第三题迟迟没想出来怎么做。</p><h2 id="感受"><a href="#感受" class="headerlink" title="感受"></a>感受</h2><p>　　1C 结束后很失落，因为这是第一次打规模这么大的比赛，但是投入了很多的信心，而且一开始投入了很多精力。</p><p>　　事实上对于我来说，第一次打 GCJ，成绩不好是肯定的。一来思考题目时找不到正确的方向，会随心所欲地想到各种地方(这其实是不了解的一种表现); 二是在遇到未知问题的时候不敢想，忽略了很多关键的原因和解决方案。多做题目增长见识，多看书，以及学一些数学、物理、英语等等(一定不要跟随老师的步骤，会很慢!)以便更快理解题目。</p><p>　　GCJ 的题目很新颖，对思维拓展效果很明显。平时也可以多练习一些原题。</p><p>　　明年再来！</p><p>　　最后祝各位挺进 Round 2 的大佬比赛顺利。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　今年的 Google Code Jam 赛季草草结束了。由于先天能力上的缺失，平时积累的不足，加上赛期准备不充分，我的赛季止步于 Round 1。我通过参加 GCJ 比赛增长见识，提高自己的代码能力，受益匪浅。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Google Code Jam" scheme="https://cosine22.xyz/tags/Google-Code-Jam/"/>
+    
+      <category term="Google Code Jam 2020" scheme="https://cosine22.xyz/tags/Google-Code-Jam-2020/"/>
+    
+      <category term="GCJ" scheme="https://cosine22.xyz/tags/GCJ/"/>
+    
+      <category term="GCJ2020" scheme="https://cosine22.xyz/tags/GCJ2020/"/>
+    
+      <category term="Google" scheme="https://cosine22.xyz/tags/Google/"/>
+    
+      <category term="谷歌" scheme="https://cosine22.xyz/tags/%E8%B0%B7%E6%AD%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>中国剩余定理介绍</title>
@@ -63,8 +94,6 @@
     
       <category term="C++" scheme="https://cosine22.xyz/tags/C/"/>
     
-      <category term="资源分享" scheme="https://cosine22.xyz/tags/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/"/>
-    
       <category term="Google Code Jam" scheme="https://cosine22.xyz/tags/Google-Code-Jam/"/>
     
       <category term="GCJ" scheme="https://cosine22.xyz/tags/GCJ/"/>
@@ -74,6 +103,8 @@
       <category term="Google" scheme="https://cosine22.xyz/tags/Google/"/>
     
       <category term="谷歌" scheme="https://cosine22.xyz/tags/%E8%B0%B7%E6%AD%8C/"/>
+    
+      <category term="资源分享" scheme="https://cosine22.xyz/tags/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
@@ -98,8 +129,6 @@
     
       <category term="Google Code Jam" scheme="https://cosine22.xyz/tags/Google-Code-Jam/"/>
     
-      <category term="Google Code Jam 2020 Qualification Round" scheme="https://cosine22.xyz/tags/Google-Code-Jam-2020-Qualification-Round/"/>
-    
       <category term="GCJ" scheme="https://cosine22.xyz/tags/GCJ/"/>
     
       <category term="GCJ2020" scheme="https://cosine22.xyz/tags/GCJ2020/"/>
@@ -107,6 +136,8 @@
       <category term="Google" scheme="https://cosine22.xyz/tags/Google/"/>
     
       <category term="谷歌" scheme="https://cosine22.xyz/tags/%E8%B0%B7%E6%AD%8C/"/>
+    
+      <category term="Google Code Jam 2020 Qualification Round" scheme="https://cosine22.xyz/tags/Google-Code-Jam-2020-Qualification-Round/"/>
     
   </entry>
   
