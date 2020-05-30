@@ -52,9 +52,9 @@
     <link href="https://cosine22.xyz/2020/04/29/chinesereminder/"/>
     <id>https://cosine22.xyz/2020/04/29/chinesereminder/</id>
     <published>2020-04-29T15:21:00.000Z</published>
-    <updated>2020-05-30T17:23:30.022Z</updated>
+    <updated>2020-05-30T17:27:57.497Z</updated>
     
-    <content type="html"><![CDATA[<p>　　中国剩余定理是一种通过得到一个未知数用若干个数取模得到的相应的结果来求得原未知数的大小的一种方法。求解过程时间复杂度低，答案准确。要求是用于取模的数之积必须大于原未知数，否则比其更大的未知数会被取模而导致错误。此外，如果取模数之间不互质(互质要求最大公因数为 1)则必须先通过拓展中国剩余定理拆分方程组。</p><a id="more"></a><p>　　中国剩余定理的求解方程: $\sum_{i=1}^n{a_i} \cdot M_i \cdot M^-1_i$</p>]]></content>
+    <content type="html"><![CDATA[<p>　　中国剩余定理是一种通过得到一个未知数用若干个数取模得到的相应的结果来求得原未知数的大小的一种方法。求解过程时间复杂度低，答案准确。要求是用于取模的数之积必须大于原未知数，否则比其更大的未知数会被取模而导致错误。此外，如果取模数之间不互质(互质要求最大公因数为 1)则必须先通过拓展中国剩余定理拆分方程组。</p><a id="more"></a><p>　　中国剩余定理的求解方程: $\sum_{i=1}^n{a_i} \cdot M_i \cdot M^{-1}_i$</p>]]></content>
     
     <summary type="html">
     
