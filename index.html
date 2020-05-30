@@ -1192,8 +1192,12 @@
 <script>
   if (typeof MathJax === 'undefined') {
     window.MathJax = {
+        loader: {
+          load: ['[tex]/mhchem']
+        },
       tex: {
         inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
         tags: 'ams'
       },
       options: {
