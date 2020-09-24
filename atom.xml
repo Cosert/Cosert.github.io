@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Mr.Cosine&#39;s Blog</title>
   
-  <subtitle>     欢迎来到&quot;余咸波&quot;的博客 </subtitle>
+  <subtitle>     欢迎来到克鲁塞的博客 </subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cosine22.xyz/"/>
@@ -10,7 +10,7 @@
   <id>https://cosine22.xyz/</id>
   
   <author>
-    <name>Mr.Cose</name>
+    <name>Mr.Cosine</name>
     
   </author>
   
